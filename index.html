@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MFS | Login</title>
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <!-- font awsome  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- daisyui + tailwind  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section
+      class="max-w-md min-h-screen flex flex-col justify-center items-center mx-auto bg-gray-200 space-y-7 p-6"
+    >
+      <img class="mx-auto" src="images/Logo-full.png" alt="" />
+      <div class="flex flex-col w-full">
+        <label class="font-semibold text-5">Mobile Number</label>
+        <input
+          id="inputUserNumber"
+          class="w-full h-10 rounded-sm p-2 border border-blue-700 focus:border-blue-400 focus:outline-none"
+          type="tel"
+          placeholder="Enter Your Mobile Number"
+          value="010101010"
+        />
+      </div>
+      <div class="flex flex-col w-full">
+        <label class="font-semibold text-5">4-digit PIN</label>
+        <input
+          id="pin"
+          class="w-full h-10 rounded-sm p-2 border border-blue-700 focus:border-blue-400 focus:outline-none"
+          type="password"
+          placeholder="4 digit pin"
+        />
+      </div>
+      <button
+        id="continueBtn"
+        class="bg-blue-700 px-8 py-4 rounded-lg text-white font-bold cursor-pointer"
+      >
+        Continue
+      </button>
+    </section>
+    <script src="login.js"></script>
+  </body>
+</html>
