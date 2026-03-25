@@ -29,7 +29,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <section class="max-w-md min-h-screen mx-auto bg-[#08080809]">
+    <section class="max-w-md mx-auto bg-[#08080809]">
       <div class="flex justify-between items-center p-4 bg-white">
         <div class="flex justify-between items-center gap-3">
           <div class="w-15">
@@ -99,6 +99,48 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section
+      class="max-w-md bg-[#08080809] flex flex-col justify-center items-center mx-auto p-6"
+    >
+      <p class="font-bold text-2xl">Cash Out</p>
+      <div class="w-full bg-white rounded-2xl p-4 space-y-7">
+        <div class="flex flex-col w-full">
+          <label class="font-semibold text-5">Agent Number</label>
+          <input
+            id="inputAgentNumber"
+            class="w-full h-10 rounded-sm p-2 border border-blue-700 focus:border-blue-400 focus:outline-none"
+            type="tel"
+            placeholder="Enter Your Agent Number"
+            value="010101010"
+          />
+        </div>
+        <div class="flex flex-col w-full">
+          <label class="font-semibold text-5">Amount</label>
+          <input
+            id="amount"
+            class="w-full h-10 rounded-sm p-2 border border-blue-700 focus:border-blue-400 focus:outline-none"
+            type="tel"
+            placeholder="Enter Amount"
+          />
+        </div>
+        <div class="flex flex-col w-full">
+          <label class="font-semibold text-5">4-digit PIN</label>
+          <input
+            id="cashoutPin"
+            class="w-full h-10 rounded-sm p-2 border border-blue-700 focus:border-blue-400 focus:outline-none"
+            type="password"
+            placeholder="4 digit pin"
+          />
+        </div>
+      </div>
+      <button
+        id="withdrawBtn"
+        class="bg-blue-700 px-8 py-4 rounded-lg text-white font-bold cursor-pointer mt-4"
+      >
+        Withdraw Money
+      </button>
     </section>
   </body>
 </html>
